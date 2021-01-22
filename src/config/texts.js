@@ -128,6 +128,9 @@ export const texts = {
     licenseSection: {
       license: 'Lizens: '
     },
+    location: {
+      location: 'Ort'
+    },
     meeting: 'Sitzung',
     modifiedSection: {
       created: 'Erstellt am: ',
@@ -136,10 +139,16 @@ export const texts = {
         'Dieses Dokument wurde als gelöscht markiert und enthält somit möglicherweise nicht mehr alle oder keine Daten.'
     },
     name: 'Name: ',
+    organization: {
+      organization: 'Organisation: '
+    },
     paper: {
       paper: 'Drucksache'
     },
     partOfBody: 'Körperschaft: ',
+    person: {
+      person: 'Person: '
+    },
     webRepresentation: 'Webversion dieses Dokuments: '
   },
   pointOfInterest: {
