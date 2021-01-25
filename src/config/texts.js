@@ -90,6 +90,7 @@ export const texts = {
     agendaItem: {
       agendaItem: 'Tagesordnungspunkt',
       auxiliaryFile: 'Dateianhänge: ',
+      consultation: 'Beratung: ',
       isPublic: 'Ja',
       isNotPublic: 'Nein',
       meeting: 'Teil folgender Sitzung: ',
@@ -99,6 +100,24 @@ export const texts = {
       resolutionFile: 'Beschluss (Datei): ',
       resolutionText: 'Beschluss: ',
       result: 'Ergebnis: '
+    },
+    body: {
+      ags: 'Amtlicher Gemeindeschlüssel: ',
+      body: 'Körperschaft',
+      classification: 'Art der Körperschaft: ',
+      equivalent: 'Siehe auch: ',
+      legislativeTerm: 'Wahlperioden',
+      license: 'Lizenz: ',
+      licenseValidSince: 'Lizenz gültig seit: ',
+      location: 'Ort: ',
+      meeting: 'Sitzungen: ',
+      name: 'Name: ',
+      oparlSince: 'Nutzt OParl seit: ',
+      organization: 'Gruppierungen: ',
+      paper: 'Drucksachen: ',
+      rgs: 'Regionalschlüssel: ',
+      system: 'OParl System: ',
+      website: 'Website: '
     },
     consultation: {
       agendaItem: 'Tagesordungspunkt: ',
@@ -113,6 +132,10 @@ export const texts = {
       paper: 'Drucksache: ',
       role: 'Rolle oder Funktion der Beratung: '
     },
+    contactSection: {
+      name: 'Name: ',
+      email: 'Email: '
+    },
     dateSection: {
       ended: 'Endete am: ',
       ends: 'Endet am: ',
@@ -126,9 +149,11 @@ export const texts = {
       derivativeFile: 'Abgeleitete Dateien: ',
       downloadUrl: 'Download-URL: ',
       externalServiceUrl: 'Externer-URL: ',
+      license: 'Lizens: ',
       masterFile: 'Ursprungsdatei: ',
       meetings: 'Zugehörige Sitzungen: ',
       mimeType: 'Dateityp: ',
+      name: 'Name: ',
       sha1Checksum: 'SHA1-Prüfsumme: ',
       size: 'Dateigröße',
       text: 'Textrepräsentation: '
@@ -136,10 +161,8 @@ export const texts = {
     keywords: 'Schlüsselworte: ',
     legislativeTerm: {
       name: 'Bezeichnung: ',
+      partOfBody: 'Körperschaft: ',
       title: 'Wahlperiode'
-    },
-    licenseSection: {
-      license: 'Lizens: '
     },
     location: {
       location: 'Ort'
@@ -151,14 +174,12 @@ export const texts = {
       deleted:
         'Dieses Dokument wurde als gelöscht markiert und enthält somit möglicherweise nicht mehr alle oder keine Daten.'
     },
-    name: 'Name: ',
     organization: {
       organization: 'Organisation: '
     },
     paper: {
       paper: 'Drucksache'
     },
-    partOfBody: 'Körperschaft: ',
     person: {
       person: 'Person: '
     },
