@@ -182,6 +182,16 @@ export const texts = {
       resultsProtocol: 'Ergebnisprotokoll: ',
       verbatimProtocol: 'Wortprotokoll: '
     },
+    membership: {
+      hasNoVotingRight: 'Nein',
+      hasVotingRight: 'Ja',
+      membership: 'Mitgliedschaft',
+      onBehalfOf: 'Vertritt: ',
+      organization: 'Gruppierung: ',
+      person: 'Person: ',
+      role: 'Rolle: ',
+      votingRight: 'Stimmberechtigt: '
+    },
     modifiedSection: {
       created: 'Erstellt am: ',
       modified: 'Zuletzt bearbeitet am: ',
@@ -189,7 +199,7 @@ export const texts = {
         'Dieses Dokument wurde als gelöscht markiert und enthält somit möglicherweise nicht mehr alle oder keine Daten.'
     },
     organization: {
-      organization: 'Organisation: '
+      organization: 'Gruppierung: '
     },
     paper: {
       paper: 'Drucksache'
