@@ -34,6 +34,7 @@ export * from './MapSwitchHeader';
 export * from './MediaSection';
 export * from './Radiobutton';
 export * from './SafeAreaViewFlex';
+export * from './SectionHeader';
 export * from './ServiceBox';
 export * from './SettingsListItem';
 export * from './StorySection';
