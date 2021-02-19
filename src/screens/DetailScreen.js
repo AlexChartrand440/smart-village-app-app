@@ -14,9 +14,11 @@ import { auth } from '../auth';
 import { colors, consts, device, normalize } from '../config';
 import {
   BookmarkHeader,
+  CommercialOffer,
   EventRecord,
   HeaderLeft,
   Icon,
+  JobOffer,
   LoadingContainer,
   NewsItem,
   PointOfInterest,
@@ -29,10 +31,20 @@ import { share } from '../icons';
 import { graphqlFetchPolicy, openShare } from '../helpers';
 import { useRefreshTime } from '../hooks';
 
-const getComponent = (query) => {
+const getGenericComponent = (genericType) => {
+  switch (genericType) {
+    case 'commercial':
+      return CommercialOffer;
+    case 'Job':
+      return JobOffer;
+  }
+};
+
+const getComponent = (query, genericType) => {
   const COMPONENTS = {
     [QUERY_TYPES.NEWS_ITEM]: NewsItem,
     [QUERY_TYPES.EVENT_RECORD]: EventRecord,
+    [QUERY_TYPES.GENERIC_ITEM]: getGenericComponent(genericType),
     [QUERY_TYPES.POINT_OF_INTEREST]: PointOfInterest,
     [QUERY_TYPES.TOUR]: Tour
   };
@@ -101,7 +113,9 @@ export const DetailScreen = ({ navigation }) => {
         // if there is no cached `data` or network fetched `data` we fallback to the `details`.
         if ((!data || !data[query]) && !details) return null;
 
-        const Component = getComponent(query);
+        const Component = getComponent(query, data?.[query]?.genericType ?? details.genericType);
+
+        if (!Component) return null;
 
         return (
           <SafeAreaViewFlex>
