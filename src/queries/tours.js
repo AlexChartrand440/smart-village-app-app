@@ -5,6 +5,7 @@ export const GET_TOURS = gql`
     tours(ids: $ids, limit: $limit, skip: $offset, order: $order, category: $category) {
       id
       name
+      createdAt
       category {
         name
       }

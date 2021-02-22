@@ -154,7 +154,13 @@ export const HomeScreen = ({ navigation }) => {
           categoriesNews.map(
             ({ categoryButton, categoryId, categoryTitle, categoryTitleDetail }, index) => (
               <HomeSection
-                key={index}
+                key={`${categoryId}-${index}`}
+                additionalQuery={{
+                  fetchPolicy,
+                  query: QUERY_TYPES.TOURS,
+                  queryVariables: { limit: 3 },
+                  titleDetail: 'MEGA'
+                }}
                 buttonTitle={categoryButton}
                 categoryId={categoryId}
                 title={categoryTitle}

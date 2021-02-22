@@ -33,6 +33,7 @@ export const openShare = async ({ message, title, url }) => {
   }
 };
 
+// TODO: add job offer and commercial share message
 /* eslint-disable complexity */
 /* NOTE: we need to check a lot for presence, so this is that complex */
 export const shareMessage = (data, query) => {

@@ -70,6 +70,7 @@ export const parseGenericItems = (data, skipLastDivider) => {
 export const parseNewsItems = (data, skipLastDivider, titleDetail) => {
   return data?.map((newsItem, index) => ({
     id: newsItem.id,
+    publishedAt: newsItem.publishedAt,
     subtitle: subtitle(momentFormat(newsItem.publishedAt), newsItem.dataProvider?.name),
     title: newsItem.contentBlocks?.[0]?.title,
     picture: {
@@ -126,6 +127,7 @@ export const parsePointOfInterest = (data, skipLastDivider) => {
 export const parseTours = (data, skipLastDivider) => {
   return data?.map((tour, index) => ({
     id: tour.id,
+    createdAt: tour.createdAt,
     title: tour.name,
     subtitle: tour.category?.name,
     picture: {

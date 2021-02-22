@@ -83,7 +83,10 @@ export const texts = {
     categoryTitleDetail: 'Nachricht'
   },
   job: {
-    job: 'Stellenanzeige'
+    employmentType: 'Art der Anstellung: ',
+    expirationDate: 'Ausgeschrieben bis: ',
+    job: 'Stellenausschreibung',
+    publishedAt: 'Veröffentlichungsdatum: '
   },
   lunch: {
     noOffers: 'Für dieses Datum sind derzeit keine Gerichte verfügbar.',
