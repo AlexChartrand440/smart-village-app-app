@@ -48,6 +48,11 @@ export const texts = {
   constructionSites: {
     noInformationGiven: 'Derzeit sind zu keinen Baustellen Informationen vorhanden.'
   },
+  dataProvider: {
+    more: 'Mehr von',
+    partner: 'Partner',
+    showAll: 'Alle anzeigen'
+  },
   detailTitles: {
     eventRecord: 'Veranstaltung',
     newsItem: 'Nachricht',
@@ -55,7 +60,8 @@ export const texts = {
     tour: 'Tour'
   },
   errors: {
-    noData: 'Bitte überprüfen Sie Ihre Internetverbindung.'
+    noData: 'Bitte überprüfen Sie Ihre Internetverbindung.',
+    unexpected: 'Es ist ein unerwarteter Fehler aufgetreten.'
   },
   eventRecord: {
     appointments: 'Termine',
@@ -82,6 +88,9 @@ export const texts = {
   lunch: {
     noOffers: 'Für dieses Datum sind derzeit keine Gerichte verfügbar.',
     showAll: 'Alle Gastro-Angebote anzeigen'
+  },
+  map: {
+    noGeoLocations: 'Zu den angegebenen Orten gibt es leider keine Geodaten.'
   },
   navigationTitles: {
     home: 'Übersicht'

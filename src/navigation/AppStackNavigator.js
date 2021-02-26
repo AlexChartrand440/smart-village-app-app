@@ -5,6 +5,7 @@ import {
   BookmarkScreen,
   ConstructionSiteDetailScreen,
   ConstructionSiteOverviewScreen,
+  DataProviderScreen,
   DetailScreen,
   FormScreen,
   HomeScreen,
@@ -61,6 +62,12 @@ const AppStackNavigator = (headerRight = true) =>
         screen: ConstructionSiteOverviewScreen,
         navigationOptions: (props) => ({
           title: props.navigation.getParam('title', texts.widgets.constructionSites)
+        })
+      },
+      DataProvider: {
+        screen: DataProviderScreen,
+        navigationOptions: (props) => ({
+          title: props.navigation.getParam('title', texts.dataProvider.partner)
         })
       },
       Detail: {
